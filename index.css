@@ -1,0 +1,27 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.column-div,
+.website-name-div,
+.limit-button-div {
+  display: inline-block;
+}
+
+.column-div {
+  margin-right: 10px;
+}
+
+
+.website-name-div {
+  margin-right: 2px;
+}
