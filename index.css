@@ -1,28 +1,54 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-.centre {
+.title-container {
   display: flex;
+  flex-direction: row;
+  height: 50px;
   justify-content: center;
   align-items: center;
-  height: 75vh;
-  padd
 }
 
-.column-div,
-.website-name-div,
-.limit-button-div {
-  display: inline-block;
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.column-div {
-  margin-right: 10px;
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
+
+.container {
+  height: 400px;
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 12px;
+  justify-content: center;
+  align-items: center;
+
+  border-color: gray;
+  border-style: solid;
+}
+
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px
+}
 
 .website-name-div {
-  margin-right: 2px;
+  flex: 1
+}
+
+.button-div {
+  width: 100px;
 }
