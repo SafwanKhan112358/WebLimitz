@@ -36,23 +36,10 @@ function displayLimitInterface(event) {
   modalContentDiv.style.height = "40%";
   modalContentDiv.style.borderRadius = "10px";
 
-  websiteNameDiv = document.createElement("div");
-  websiteNameDiv.style.display = "flex";
-  websiteNameDiv.style.flexDirection = "row";
-  websiteNameDiv.style.justifyContent = "center";
-  websiteNameDiv.style.alignItems = "center";
-
-  websiteNameText = document.createElement("div");
-  websiteNameText.textContent = websiteName;
-  websiteNameText.style.display = "flex";
-  websiteNameText.style.flexDirection = "row";
-  websiteNameText.style.flex = "1";
-  websiteNameText.style.justifyContent = "center";
-  websiteNameText.style.alignItems = "center";
-  websiteNameText.style.paddingLeft = "15px";
-
   closeButtonDiv = document.createElement("div");
-  closeButtonDiv.style.width = "25px";
+  closeButtonDiv.style.display = "flex";
+  closeButtonDiv.style.flexDirection = "row";
+  closeButtonDiv.style.justifyContent = "end";
 
   closeButton = document.createElement("button");
   closeButton.textContent = "X";
@@ -61,8 +48,13 @@ function displayLimitInterface(event) {
     modal.remove();
   }
   closeButtonDiv.appendChild(closeButton);
-  websiteNameDiv.appendChild(websiteNameText);
-  websiteNameDiv.appendChild(closeButtonDiv);
+
+  websiteNameDiv = document.createElement("div");
+  websiteNameDiv.style.display = "flex";
+  websiteNameDiv.style.flexDirection = "row";
+  websiteNameDiv.style.justifyContent = "center";
+  websiteNameDiv.style.alignItems = "center";
+  websiteNameDiv.textContent = websiteName;
 
   dailyTimeLimitDiv = document.createElement("div");
   dailyTimeLimitDiv.style.display = "flex";
@@ -76,18 +68,32 @@ function displayLimitInterface(event) {
   userInputDiv.style.flexDirection = "row";
   userInputDiv.style.justifyContent = "center";
   userInputDiv.style.alignItems = "center";
-  userInputDiv.style.marginTop = "20px";
+  userInputDiv.style.marginTop = "30px";
 
   timeLimitInputDiv = document.createElement("div");
+  timeLimitInputDiv.style.width = "150px";
+  timeLimitInputDiv.style.display = "flex";
+  timeLimitInputDiv.style.flexDirection = "row";
+  timeLimitInputDiv.style.justifyContent = "end";
+  timeLimitInputDiv.style.alignItems = "center";
+
   timeLimitInput = document.createElement("input");
   timeLimitInput.style.width = "35px";
   timeLimitInput.id = "time-limit-input";
   timeLimitInputDiv.appendChild(timeLimitInput);
 
-  timeText = document.createElement("div");
-  timeText.textContent = "min";
+  timeTextDiv = document.createElement("div");
+  timeTextDiv.style.width = "100px";
+  timeTextDiv.style.display = "flex";
+  timeTextDiv.style.flexDirection = "row";
+  timeTextDiv.style.marginLeft = "10px";
+
+  timeTextElement = document.createElement("div");
+  timeTextElement.textContent = "min";
+  timeTextDiv.appendChild(timeTextElement);
+
   userInputDiv.appendChild(timeLimitInputDiv);
-  userInputDiv.appendChild(timeText);
+  userInputDiv.appendChild(timeTextDiv);
 
   doneButtonDiv = document.createElement("div");
   doneButtonDiv.style.display = "flex";
@@ -104,6 +110,7 @@ function displayLimitInterface(event) {
   doneButton.textContent = "Set Limit";
   doneButtonDiv.appendChild(doneButton);
 
+  modalContentDiv.appendChild(closeButtonDiv);
   modalContentDiv.appendChild(websiteNameDiv);
   modalContentDiv.appendChild(dailyTimeLimitDiv);
   modalContentDiv.appendChild(userInputDiv);
