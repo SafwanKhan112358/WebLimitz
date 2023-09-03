@@ -3,12 +3,9 @@
 WebLimitz is a web application that limits a user's activity on a range of websites
 
 # Application Flow: 
-1. PlaceHolder
-2. PlaceHolder
-3. PlaceHolder
-4. PlaceHolder
-5. PlaceHolder
-6. PlaceHolder
+<img width="309" alt="WebLimitzMainFlow" src="https://github.com/SafwanKhan112358/WebLimitz/assets/62441768/945fede0-a9ad-4fe9-9041-f6f68e84404d">
+<img width="695" alt="WebLimitzBackGround" src="https://github.com/SafwanKhan112358/WebLimitz/assets/62441768/54ef5f33-c4e3-4807-a91f-c9eeb59991a2">
+
 
 
 
